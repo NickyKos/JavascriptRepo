@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Enrollment Form</title>
+ <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+
+<h2>Student Enrollment Form</h2>
+
+<form id="enrollmentForm">
+  <label for="fullName">Full Name:</label>
+  <input type="text" id="fullName" placeholder="Enter your full name"><br>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" placeholder="Enter your email"><br>
+
+  <label for="dob">Date of Birth:</label>
+  <input type="date" id="dob"><br>
+
+  <label>Gender:</label>
+  <input type="radio" id="male" name="gender" value="Male"> Male
+  <input type="radio" id="female" name="gender" value="Female"> Female
+  <input type="radio" id="other" name="gender" value="Other"> Other<br>
+
+  <label for="phone">Phone Number:</label>
+  <input type="tel" id="phone" placeholder="Enter your phone number"><br>
+
+  <label for="course">Course Selection:</label>
+  <select id="course">
+    <option value="computerScience">Computer Science</option>
+    <option value="mathematics">Mathematics</option>
+    <option value="physics">Physics</option>
+  </select><br>
+
+  <label for="address">Address:</label>
+  <textarea id="address" placeholder="Enter your address"></textarea><br>
+
+  <label for="terms">
+    <input type="checkbox" id="terms"> I agree to the terms and conditions
+  </label><br>
+
+  <button type="submit">Submit Enrollment</button>
+</form>
+
+<div id="errorMessages"></div>
+<div id="successMessage"></div>
+
+
+</body>
+</html>
